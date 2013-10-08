@@ -75,7 +75,7 @@ This JavaScript library is used by the [deep-js](https://github.com/s-a/deep-js)
 </div>
 ```
 
-### Html skeleton
+### JavaScript sample
 
 ```javascript
   ThemeRoller.init($("#sheet-colors")), {
