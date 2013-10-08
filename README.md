@@ -5,7 +5,7 @@ This JavaScript library is used by the [deep-js](https://github.com/s-a/deep-js)
 
 [Online demo](http://app.deep-js.com/#theme-roller/index)
 
-
+### Html skeleton
 ```html
 <style>
   .style-selector-item:hover{
@@ -73,4 +73,19 @@ This JavaScript library is used by the [deep-js](https://github.com/s-a/deep-js)
     <i class="alert-info">{{_ "intro__text__c"}}</i>
   </div>
 </div>
+```
+
+### Html skeleton
+
+```javascript
+  ThemeRoller.init($("#sheet-colors")), {
+    "translate" : Deep.translate,   // optional - custom translation method.
+    "error": function(userValue) {  // optional custom error method.
+      Deep.Web.UI.msg({type: "error", msg: Deep.translate("invalid__color__value", userValue )});
+    }
+  });
+  Deep.on("sa.theme-roller.index.render", function(){
+    var watchElements = $("body").find("*:not(#sheet-colors):not(#sheet-colors *)");
+    ThemeRoller.listen(watchElements);
+  });
 ```
