@@ -89,3 +89,5 @@ This JavaScript library is used by the [deep-js](https://github.com/s-a/deep-js)
     ThemeRoller.listen(watchElements);
   });
 ```
+
+MIT and GPL licensed

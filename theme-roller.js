@@ -1,3 +1,9 @@
+/*!
+	ThemeRoller JavaScript Library
+	Copyright Stephan Ahlf (ahlf-it.de)
+	https://github.com/s-a/deep-js-theme-roller
+	MIT and GPL licensed.
+*/
 ;(function(window, $) {
 
 
